@@ -4,28 +4,43 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edige">
-    <link re="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css">
     <title>Site desenvolvido em Aula</title>
 </head>
 <body>
     <header>
         <nav>
-            <div>
+            <div class="displayFlex gapCabecalho">
                 <!--Inserindo logo na Nav-->
                 <a href="#"><img src="img/logo.png"></a>
-                <div> 
+                <div class="displayFlex gapCabecalhoBotoes marginResponsiva"> 
                     <!--Inserindo elementos tipo clicaveis -->
-                    <a href="#">Graduação</a>
-                    <a href="#">Blog</a>
+                    <a class="removeDecoration tamanhoBotaoCabecalho marginBotaoCabecalho" href="#">Graduação</a>
+                    <a class="removeDecoration tamanhoBotaoCabecalho" href="#">Blog</a>
                 </div>
             </div>
-            <div>
-                <!--Caixa de Busca e tipo-->
-                <input class="inputBusca" type="text" placeholder="Buscar">
-                <button><img src="img/lupa.svg"> </button>
+            <div class="displayflex gapCabecalho">
+
+                <div class="displayFlex bordaBusca marginResponsiva">
+                    <input class="inputBusca" type="text" placeholder="Buscar">
+                    <button class="botaoBusca"><img src="img/lupa.svg"></button>
+
                 </div>
+                <a class="removeDecoration quebraDelinha" displayFlexAmbienteV href="#"><img src="img/cadeado.svg">Ambiente Virtual</a>
+            </div>
+        
         </nav>
     </header>
+    
+    <section>
+        <h1>Nós somos uma<strong>Faculdade Digital</strong></h1>
+        <div>
+        <h2>Você, preparado para<strong>o futuro.</strong></h2>
+        <p>Se preparar para o mercado é uma coisa, prosperar nele é outra. <strong>Nossa graduação te ajuda com as duas.</strong></p>
+        </div>
+    </section>
+    
+
     
 </body>
 </html>
