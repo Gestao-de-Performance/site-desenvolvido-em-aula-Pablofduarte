@@ -94,15 +94,18 @@ padding: 1%
 }
 
 /*Display Flex do ambiente Virtual*/
-.displayFlexAmbienteV{
-    display:flex;
-    align-items:center;
+.displayFlexAmbienteV {
+    display: flex;
+    align-items: center;
     gap: 5px;
 }
 
 /*Versão Tablet*/
-@media screen and (max-width: 1024px) {
-    .displayFlex{
+ @media screen and (max-width: 1024px){
+
+ }
+
+ .displayFlex {
         flex-wrap: wrap;
     }
 
@@ -119,8 +122,17 @@ padding: 1%
     .marginBotaoCabecalho{
         margin: 10% 0;
     }
-}
+
 
 /*Versão Mobile*/
 
 /*Fim Cabeçalho*/
+
+.containerInformacoes{
+    margin:5% 20%;
+
+}
+
+h1 {
+    opacity: 0.8;
+}
