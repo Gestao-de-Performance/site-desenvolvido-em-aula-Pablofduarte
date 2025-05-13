@@ -9,8 +9,10 @@
     --cor-branco-font: #ffffff;
 
     --cor-background-cursos: #3b1270;
-
     --cor-background-botao: #8E35FF;
+    --cor-background-rodape: #DED0F1;
+
+    --cor-texto-categoria: #CC7F0B;
 }
 
 *{
@@ -30,13 +32,13 @@ font-weight:400;
 
 }
 
-.marginSite{
-    margin: 7% 17%;
+.MarginSite{
+    margin: 5% 20%;
 }
 
 @media screen and (max-width: 1024px){
-.marginSite {
-    margin: 5% 14%;
+.MarginSite {
+    margin: 5%;
 }
  }
 
@@ -47,30 +49,28 @@ font-weight:400;
 
  /*Início Cabeçalho*/
 header {
-    width: 100%
+    width: 100%;
 
+    
 }
 
 nav {
-padding: 1%
+margin-top: 50px;
 
 }
 
-/*Classe genérica para Display Flex*/
+
 .displayFlex {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
+    gap: 30px;
 }
 
-/*Gap utilizado no cabeçalho*/
-.gapCabecalho{
-    gap: 20%;
-}
 
 /*Gap entre os botões do cabeçalho*/
 .gapCabecalhoBotoes{
-    gap: 15%;
+    gap: 20%;
 }
 
 /*Borda do campo de Busca*/
@@ -120,10 +120,11 @@ padding: 1%
     gap: 5px;
 }
 
-/*Versão Tablet*/
+/*RESPONSIVO TABLET*/
  @media screen and (max-width: 1024px){
 .displayFlex{
     flex-wrap: wrap;
+    justify-content: center;
 }
        
     }
@@ -143,11 +144,11 @@ padding: 1%
     }
 
 
-/*Versão Mobile*/
+/*RESPONSIVO TABLET*/
 
-/*Fim Cabeçalho*/
 
-/*Inicio Informações*/
+
+/*------------ INICIO PRINCIPAL ---------*/
 
 h1{
     opacity: 0.8;
@@ -156,34 +157,37 @@ h1{
     margin-bottom: 1%;
 }
 
-.containerInformacoes{
-    display: flex;
+.textoInformacoes {
+    max-width: 237;
+} 
 
-}
 
-.containerTextoInformacoes{
+
+.containerTextoinformacoes {
     display: flex;
     justify-content: space-between;
     gap: 4%;
-    align-items: flex-end;
+    margin-bottom: 1%;
+
+   
 }
 
 .subtituloInformacoes{
-    font-size:6.5rem;
+    font-size:5.5rem;
 }
 
 .imgInformacoes{
     height: 254px
 }
 
-/*Tablet*/
+/*----- Tablet -----*/
 @media screen and (max-width: 1024px){
-    .containerTextoInformacoes{
+    .containerTextoinformacoes{
         flex-wrap: wrap;
     }
 
     .subtituloInformacoes {
-        font-size: 4rem;
+        font-size: 3.5rem;
     }
 
     .imgInformacoes{
@@ -196,7 +200,7 @@ h1{
     }
 }
 
-/*Fim Informações*/
+/*----------- FIM PRINCIPAL -------*/
 
 /*Início Cursos*/
 .backgroundContainerCursos{
@@ -276,4 +280,176 @@ h1{
     padding: 2%;
     font-size: 2rem;
 }
-/*Fim Botão Inscrever-se*/
+
+@media screen and (max-width: 1024px){
+    .posicionamentoBotaoInscrever{
+        margin: 0 5%;
+        top: -38px;
+    }
+
+    .botaoInscreverSe{
+        width: 96%;
+    }
+}
+
+@media screen and (max-width: 767px){
+    .posicionamentoBotaoInscrever {
+        top: -19px;
+    }
+}
+
+@media screen and (max-width: 1024px){
+    .posicaoPersonagem{
+        display: none;
+    }
+}
+
+@media screen and (max-width: 767px){
+    .containerEscolhaCursos {
+        min-width: 0;
+        flex-wrap: wrap;
+    }
+
+
+    .quebraDeLinha {
+        white-space: break-spaces;
+    }
+
+    .containerBotoesEscolhaCursos {
+        gap: 5%;
+        justify-content: center;
+        width: 100%;
+    }
+
+    .botoesEscolhaCursos{
+        width: 34px;
+        height: 34px;
+    }
+
+    .botoesEscolhaCursos > img{
+        width: 34px;
+        height: 34px;
+    }
+}
+
+
+
+/*--------------------- INICÍO CURSOS GRATIS --------------------------*/
+
+
+.TitulosCursosGratis {
+    margin-bottom: 3%;
+    margin-top: -5%;
+    font-size: 2rem;
+    height: 2rem;
+
+}
+
+.BotaoGratis {
+    transition: 0.3s;
+}
+
+.BotaoGratis:hover {
+    transform: scale(1.1);
+
+}
+
+
+
+@media screen and(max-width: 1024){
+     .BotaoGratis{
+        width: 49%;
+
+     }
+}
+
+@media screen and (max-width: 767px){
+    .BotaoGratis {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 767px){
+     .TitulosCursosGratis{
+        height: 2%;
+     }
+}
+/*--------------------- FIM CURSOS GRATIS --------------------------*/
+
+/*------------ INICÍO BLOG ---------*/
+
+.TituloBlog {
+    font-size: 2rem;
+    margin-bottom: 2%;
+    margin: 1% 50;
+}
+
+.tituloBlog strong{
+    color: var(--cor-background-botao);
+}
+
+.TitulosPostBlog {
+    padding: 5% 4% 10%;
+
+}
+
+.BotaoBlog {
+    max-width: 340px;
+    min-height: 370px;
+    box-shadow: 0px 6px 7px rgba(0, 0, 0, 0.2);
+}
+
+.SectionContainerBlog {
+    padding: 0 4%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.CategoriaPostBlog {
+    color: var(--cor-texto-categoria)
+
+}
+
+.LeitraBlog {
+    opacity: 0.7;
+}
+
+/*------------ FIM BLOG ---------*/
+
+/*------------ INICÍO RODAPÉ ---------*/
+
+footer{
+    background-color: var(--cor-background-rodape);
+    padding: 0.5%;
+}
+
+/*FOOTER IGUAL A DIV*/
+footer > div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 4%;
+}
+
+.containerContatos {
+    min-width: 177px;
+  
+}
+
+.LogoRodape {
+    width: 100%;
+}
+
+.MarginFooter {
+    margin-top: 5%;
+}
+
+@media screen and (max-width: 767px){
+    footer > div {
+        gap: 10%;
+        flex-wrap: wrap;
+        height: 400px;
+        align-content: center;
+    }
+}
+/*------------ FIM RODAPÉ ---------*/
